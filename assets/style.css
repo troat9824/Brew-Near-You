@@ -1,0 +1,17 @@
+header {
+    font-size: 2vw;
+}
+
+.hero {
+    background-image: url(../assets/images/beer_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 3vw;
+    color:aliceblue;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+
+}
