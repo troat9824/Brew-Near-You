@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>   
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,25 +24,27 @@
     <section class="locate">
         <h2>Find Some Beer</h2>
 
-        <form>
+        <form id="brewerform">
+            
             <div>
-                <input type="text">
+                <input type="text" id="brewer">
             </div>
             <div>
                 <select name="" id=""></select>
             </div>
             <div>
-                <button>Where's The Beer!</button>
+                <button id="submitSearch">Where's The Beer!</button>
             </div>
         </form>
     </section>
 
     <main>
-
+        <div id="title"></div>
+        <div id="response"></div>
     </main>
 
     <footer>
 
     </footer>
+    <script src="assets/app.js"></script>
 </body>
-</html>
