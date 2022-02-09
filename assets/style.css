@@ -6,12 +6,27 @@ header {
     background-image: url(../assets/images/beer_photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     font-size: 3vw;
+    display: flex;
     color:aliceblue;
+    justify-content: center;
     text-align: center;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-nav a {
-    
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+nav a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+    color:lightskyblue;
+}
+.locate {
+    text-align: center;
+    font-size: 2vw;
 }
