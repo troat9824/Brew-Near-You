@@ -1,5 +1,20 @@
+body {
+    background-color: #252525ea;
+}
 header {
     font-size: 2vw;
+}
+
+nav {
+    background-color: #252525ea;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+nav a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+    color:lightskyblue;
 }
 
 .hero {
@@ -15,18 +30,41 @@ header {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-
-nav {
+.form-section {
     background-color: #252525ea;
+    height: 200px;
+}
+
+.form-section h2, .form-section div, .form {
     display: flex;
-    justify-content: space-around;
-    text-decoration: none;
+    justify-content: center;
+    
 }
-nav a:hover, a:focus, a:active, a:visited {
-    text-decoration: none;
-    color:lightskyblue;
+
+.form-section h2 {
+    font-size: 2.5vw;
+    color: aliceblue;
 }
-.locate {
-    text-align: center;
-    font-size: 2vw;
+
+.form  {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form div {
+    margin-bottom: 10px;
+}
+
+.location-input {
+    font-size: 16px;
+}
+
+.select-dropdown {
+    padding: 3px;
+    font-size: 16px;
+}
+
+.btn {
+    margin: 12px;
+    font-size: 18px;
 }
