@@ -1,5 +1,7 @@
 # Brew Near You
 
+![alt](./assets/images/brew-near-you.jpg)
+
 ## An app that makes it easy to find a brewery near you
 
 ## Built With
