@@ -20,6 +20,7 @@ body {
     justify-content: center;
     text-align: center;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    align-items: center;
 }
 
 
