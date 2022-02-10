@@ -2,11 +2,15 @@ header {
     font-size: 2vw;
 }
 
+body {
+    background-color: #252525ea;;
+}
 .hero {
     background-image: url(../assets/images/beer_photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
     font-size: 3vw;
     display: flex;
     color:aliceblue;
