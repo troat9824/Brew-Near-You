@@ -75,3 +75,26 @@ nav a:hover, a:focus, a:active, a:visited {
     margin: 12px;
     font-size: 18px;
 }
+
+footer {
+    background-color: white;
+}
+
+
+.credit-h1 {
+    font-size: 2.25vw;
+    text-align: center;
+}
+
+.name {
+    display: block;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 2vw;
+    text-align: center;
+}
+.credit {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+}
