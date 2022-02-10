@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css"/>
-    <title>Brew Near You</title>
-
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <link rel="stylesheet" href="assets/style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Breweries</title>
 </head>
 
 
 
 
 <body>
-    <header> 
+    <header>
         <nav>
-            <a href="">Home</a>
-            <a href="">Breweries</a>
-            <a href="">Credit</a>
+            <a href="./index.html">Home</a>
+            <a href="#response">Breweries</a>
+            <a href="#credit">Credit</a>
         </nav>
     </header>
 
@@ -28,23 +26,20 @@
     </div>
 
     <section class="locate">
-            <h2>Find Some Beer</h2>
-            
-            <form id="brewerform" class="form">
-                <div>
-                    <input type="text" id="brewer" class="location-input" placeholder="Enter City or State">
-                </div>
-                <div>
-                    <select class="select-dropdown" id="brewerie-type">
-                        <option value disabled selected>Brewerie type</option>
-                    </select>
-                </div>
-            </form>
+        <h2>Find Some Beer</h2>
 
+        <form id="brewerform">
+            
+            <div>
+                <input type="text" id="brewer">
+            </div>
+            <div>
+                <select name="" id=""></select>
+            </div>
             <div>
                 <button id="submitSearch" class="btn">Where's The Beer!</button>
             </div>
-            
+        </form>
     </section>
 
     <main>
@@ -53,9 +48,14 @@
     </main>
 
     <footer>
-
+        <section id="credit">
+            <h1 class="credit-h1">Made by:</h1>
+            <h2 class="name">Samuel Sook</h2>
+            <h2 class="name">Taylor Vaughn</h2>
+            <h2 class="name">Ken Eversley</h2>
+            <h2 class="name">Paola Sotelo</h2>
+        </section>
     </footer>
     <script src="assets/app.js"></script>
-
 </body>
 </html>
