@@ -28,21 +28,23 @@
     </div>
 
     <section class="locate">
-
-        <h2>Find Some Beer</h2>
-
-        <form id="brewerform">
+            <h2>Find Some Beer</h2>
             
+            <form id="brewerform" class="form">
+                <div>
+                    <input type="text" id="brewer" class="location-input" placeholder="Enter City or State">
+                </div>
+                <div>
+                    <select class="select-dropdown" id="brewerie-type">
+                        <option value disabled selected>Brewerie type</option>
+                    </select>
+                </div>
+            </form>
+
             <div>
-                <input type="text" id="brewer">
+                <button id="submitSearch" class="btn">Where's The Beer!</button>
             </div>
-            <div>
-                <select name="" id=""></select>
-            </div>
-            <div>
-                <button id="submitSearch">Where's The Beer!</button>
-            </div>
-        </form>
+            
     </section>
 
     <main>
