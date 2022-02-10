@@ -29,6 +29,8 @@ nav a:hover, a:focus, a:active, a:visited {
 .locate {
     background-color: #252525ea;
     height: 200px;
+    text-align: center;
+    font-size: 2vw;
 }
 
 .locate h2, .locate div, .form {
