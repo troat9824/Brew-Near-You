@@ -1,6 +1,8 @@
+
 * {
     box-sizing: border-box;
   }
+
 header {
     font-size: 2vw;
 }
@@ -8,6 +10,7 @@ header {
 body {
     background-color: #252525ea;;
 }
+
 .hero {
     background-image: url(../assets/images/beer_photo.jpg);
     background-repeat: no-repeat;
