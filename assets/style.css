@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 header {
     font-size: 2vw;
 }
