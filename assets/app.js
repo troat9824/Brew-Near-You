@@ -25,7 +25,7 @@ $('#brewerform') .on("submit", function (events) {
                 brewery_name = brewery_name.replaceAll("-", " ")
                 brewery_name = toTitleCase(brewery_name);
                 $("#response").append(`
-                <a href =${obj.website_url || "#"}> 
+                <a href =${obj.website_url || "#"} target="_blank"> 
                     <p>Name:  ${brewery_name}  </p>
                 </a>
                 `);
@@ -35,4 +35,13 @@ $('#brewerform') .on("submit", function (events) {
             });
 
         })
+        type='text/javascript'>
+            function loadMapScenario() {
+                var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                    /* No need to set credentials if already passed in URL */
+                    showSearchBar: true
+                });
+                
+            }
+        
 });
