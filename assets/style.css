@@ -1,0 +1,102 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+header {
+    font-size: 2vw;
+}
+
+body {
+    background-color: #252525ea;;
+}
+
+.hero {
+    background-image: url(../assets/images/beer_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-size: 3vw;
+    display: flex;
+    color:aliceblue;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+
+nav {
+    background-color: #252525ea;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+nav a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+    color:lightskyblue;
+}
+.locate {
+    background-color: #252525ea;
+    height: 200px;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.locate h2, .locate div, .form {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.locate h2 {
+    font-size: 2.5vw;
+    color: aliceblue;
+}
+
+.form  {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form div {
+    margin-bottom: 10px;
+}
+
+.location-input {
+    font-size: 16px;
+}
+
+.select-dropdown {
+    padding: 3px;
+    font-size: 16px;
+}
+
+.btn {
+    margin: 12px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: white;
+}
+
+
+.credit-h1 {
+    font-size: 2.25vw;
+    text-align: center;
+}
+
+.name {
+    display: block;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 2vw;
+    text-align: center;
+}
+.credit {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+}

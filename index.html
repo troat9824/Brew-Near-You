@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Search Breweries</title>
+<title>Brew Near You</title>
 </head>
 
 
@@ -15,17 +15,17 @@
 <body>
     <header>
         <nav>
-            <a href="">Home</a>
-            <a href="">Breweries</a>
-            <a href="">Credit</a>
+            <a href="./index.html">Home</a>
+            <a href="#response">Breweries</a>
+            <a href="#credit">Credit</a>
         </nav>
     </header>
 
-    <div>
+    <div class="hero">
         <h1>Brew Near You</h1>
     </div>
 
-    <section>
+    <section class="locate">
         <h2>Find Some Beer</h2>
 
         <form id="brewer form">
@@ -46,6 +46,7 @@
             <div style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
                <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=33.71687616010689~-86.63901827322604&amp;sty=r&amp;lvl=11.064398326409783&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
                <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=33.71687616010689~-86.63901827322604&amp;sty=r&amp;lvl=11.064398326409783&amp;rtp=~pos.33.71687616010689_-86.63901827322604____&amp;FORM=MBEDLD">Get Directions</a>
+                <button id="submitSearch" class="btn">Where's The Beer!</button>
             </div>
         </form>
     </section>
@@ -57,7 +58,13 @@
     </main>
 
     <footer>
-
+        <section id="credit">
+            <h1 class="credit-h1">Made by:</h1>
+            <h2 class="name">Samuel Sook</h2>
+            <h2 class="name">Taylor Vaughn</h2>
+            <h2 class="name">Ken Eversley</h2>
+            <h2 class="name">Paola Sotelo</h2>
+        </section>
     </footer>
     <script src="assets/app.js"></script>
 </body>
