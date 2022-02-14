@@ -44,4 +44,6 @@ $('#brewerform') .on("submit", function (events) {
                 
             }
         
+
 });
+
