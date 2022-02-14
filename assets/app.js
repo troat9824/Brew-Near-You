@@ -35,4 +35,13 @@ $('#brewerform') .on("submit", function (events) {
             });
 
         })
+        type='text/javascript'>
+            function loadMapScenario() {
+                var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                    /* No need to set credentials if already passed in URL */
+                    showSearchBar: true
+                });
+                
+            }
+        
 });
