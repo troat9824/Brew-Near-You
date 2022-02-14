@@ -78,17 +78,39 @@ nav a:hover, a:focus, a:active, a:visited {
     font-size: 18px;
 }
 
+/*Footer section*/
 footer {
-    background-color: white;
+    background-color: white;   
+}
+
+.flex-container {
+display:flex;
+}
+
+.flex-child {
+    flex:1;
+    border: 0;
+}
+
+.flex-child:firstchild  {
+    margin-right: 150px;
+}
+
+.flex-child {
+    text-align:center; 
+    justify-content: space-around;
+    color: lightslategrey;
 }
 
 
 .credit-h1 {
     font-size: 2.25vw;
     text-align: center;
+    color: lightslategrey;
 }
 
 .name {
+    color: lightskyblue;
     display: block;
     justify-content: space-around;
     text-decoration: none;
