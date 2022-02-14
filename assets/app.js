@@ -25,7 +25,7 @@ $('#brewerform') .on("submit", function (events) {
                 brewery_name = brewery_name.replaceAll("-", " ")
                 brewery_name = toTitleCase(brewery_name);
                 $("#response").append(`
-                <p> <strong>${obj.name}</strong>, <br>
+                <p> <strong>${obj.name}</strong> <br>
                     Type of Brewery: ${obj.brewery_type} <br>
                     ${obj.street}, ${obj.city}, ${obj.state}, ${obj.postal_code} <br>
                     ${obj.phone}

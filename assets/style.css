@@ -100,3 +100,8 @@ footer {
     background-color: white;
     justify-content: space-around;
 }
+main {
+    text-align: center;
+    font-size: 2vw;
+    color:antiquewhite;
+}
