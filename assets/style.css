@@ -22,7 +22,7 @@ body {
     color:aliceblue;
     justify-content: center;
     text-align: center;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1);
     align-items: center;
 }
 
