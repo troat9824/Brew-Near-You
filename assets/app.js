@@ -19,6 +19,15 @@ $('#brewerform') .on("submit", function (events) {
         })
         .then(data => {
             console.log(data)
+            const cities = JSON.parse(localStorage.getItem("cities")) || []
+            if(!cities.includes(city_input)){
+                cities.push(city_input)
+            }
+            localStorage.setItem("cities",JSON.stringify(cities));
+            console.log("cities");
+
+         
+            
             $("#response").html("<h1>Breweries in " + city_input + "</h1>")
             data.forEach(function (obj) {
                 var brewery_name = obj.id
@@ -31,6 +40,9 @@ $('#brewerform') .on("submit", function (events) {
                     ${obj.phone}
                 <a href =${obj.website_url || "#"} target="_blank"> 
                     <p>${brewery_name}  </p>
+                </a>
+                <a href="https://bing.com/maps/default.aspx?rtp=adr.${obj.street},${obj.city},${obj.state}" target="_blank">
+                    <button>Directions</button>
                 </a>
 
                 `);
@@ -48,5 +60,6 @@ $('#brewerform') .on("submit", function (events) {
                 });
                 
             }
+
         
 });

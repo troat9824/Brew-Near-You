@@ -8,7 +8,11 @@ header {
 }
 
 body {
-    background-color: #252525ea;;
+    background-color: #252525ea;
+    /* for smaller screens */
+    display: flex;
+    flex-direction: column;
+
 }
 
 .hero {
@@ -100,6 +104,16 @@ display:flex;
     text-align:center; 
     justify-content: space-around;
     color: lightslategrey;
+}
+
+/* map section */
+.map-container{
+    display: flex;
+    align-items: center;
+        justify-content: center;
+        flex-direction:column;
+    position:relative; left:80px; bottom: 250px;
+    margin-right: 150px ;
 }
 
 
