@@ -1,6 +1,8 @@
 
 * {
     box-sizing: border-box;
+    font-family: cursive;
+
   }
 
 header {
@@ -41,9 +43,13 @@ nav a:hover, a:focus, a:active, a:visited {
     text-decoration: none;
     color:lightskyblue;
 }
+a {
+    text-decoration: none;
+    color:lightskyblue;
+}
 .locate {
     background-color: #252525ea;
-    height: 200px;
+    height: auto;
     text-align: center;
     font-size: 2vw;
 }
@@ -140,4 +146,23 @@ main {
     text-align: center;
     font-size: 2vw;
     color:antiquewhite;
+}
+input {
+    border-radius: 2vw;
+    padding: 10px 10px;
+    border: none;
+    color: #252525ea;
+    font-size: 1.5vw;
+    text-align: center;
+}
+button {
+    color: aliceblue;
+    background-color: #252525ea;
+    border: 2px solid aliceblue;
+    border-radius: 2vw;
+    padding: 10px 60px;
+    font-size: 1.5vw;
+}
+.breweryBox {
+    border: 5px solid aliceblue;
 }
