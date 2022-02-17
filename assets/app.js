@@ -8,8 +8,8 @@ function toTitleCase(str) {
 }
 $('#brewerform') .on("submit", function (events) {
     events.preventDefault()
-    var city_input = $('#brewer').val();
-    fetch("https://api.openbrewerydb.org/breweries?by_city=" + city_input, {
+    var cityInput = $('#brewer').val();
+    fetch("https://api.openbrewerydb.org/breweries?by_city=" + cityInput, {
         "method": "GET",
         "headers": {
         }
@@ -20,30 +20,33 @@ $('#brewerform') .on("submit", function (events) {
         .then(data => {
             console.log(data)
             const cities = JSON.parse(localStorage.getItem("cities")) || []
-            if(!cities.includes(city_input)){
-                cities.push(city_input)
+            if(!cities.includes(cityInput)){
+                cities.push(cityInput)
             }
             localStorage.setItem("cities",JSON.stringify(cities));
             console.log("cities");
 
          
             
-            $("#response").html("<h1>Breweries in " + city_input + "</h1>")
+            $("#response").html("<h1>Breweries in " + cityInput + "</h1>")
             data.forEach(function (obj) {
-                var brewery_name = obj.id
-                brewery_name = brewery_name.replaceAll("-", " ")
-                brewery_name = toTitleCase(brewery_name);
+                var breweryName = obj.id
+                breweryName = breweryName.replaceAll("-", " ")
+                breweryName = toTitleCase(breweryName);
                 $("#response").append(`
-                <p> <strong>${obj.name}</strong> <br>
-                    Type of Brewery: ${obj.brewery_type} <br>
-                    ${obj.street}, ${obj.city}, ${obj.state}, ${obj.postal_code} <br>
-                    ${obj.phone}
-                <a href =${obj.website_url || "#"} target="_blank"> 
-                    <p>${brewery_name}  </p>
-                </a>
-                <a href="https://bing.com/maps/default.aspx?rtp=adr.${obj.street},${obj.city},${obj.state}" target="_blank">
-                    <button>Directions</button>
-                </a>
+                <div class="breweryBox">
+                    <a href =${obj.website_url || "#"} target="_blank"> 
+                    <p>${breweryName}  </p>
+                    </a>
+                        Type of Brewery: ${obj.brewery_type} <br>
+                        ${obj.street}, ${obj.city}, ${obj.state}, ${obj.postal_code} <br>
+                        ${obj.phone} <br>
+
+                        <a href="https://bing.com/maps/default.aspx?rtp=adr.${obj.street},${obj.city},${obj.state}" target="_blank">
+                        <button>Directions</button>
+                        </a>
+                    </p>
+                </div>
 
                 `);
                 console.log(obj.id);
