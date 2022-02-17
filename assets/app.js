@@ -9,6 +9,7 @@ function toTitleCase(str) {
 $('#brewerform') .on("submit", function (events) {
     events.preventDefault()
     var cityInput = $('#brewer').val();
+    cityInput =toTitleCase(cityInput);
     fetch("https://api.openbrewerydb.org/breweries?by_city=" + cityInput, {
         "method": "GET",
         "headers": {
